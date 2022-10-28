@@ -18,14 +18,17 @@
   |-- ...
   |
   |- <b>entries</b>
-  |-- entry-1
+  |-- <b>entry-1</b>
   |--- common
   |--- components
-  |--- Entry.jsx
-  |--- Entry.module.scss
+  |--- Entry-1.jsx
+  |--- Entry-1.module.scss
   |--- index.js
   |
-  |-- entry-2
+  |-- <b>entry-2</b>
+  |--- Entry-2.jsx
+  |--- Entry-2.module.scss
+  |--- index.js
   |
   |- Component.jsx
   |- Component.module.scss
@@ -53,15 +56,15 @@
  </code>
 </pre>
 
-- Может создаваться подпапка если есть вложенность и внутри создаются функции (приоритетнее)
+- Может создаваться подпапка и внутри создаются функции (приоритетнее)
 <pre>
  <code>
   <b>common</b>
-  |- helpers
+  |- <b>helpers</b>
   |-- helper-1.js
   |-- helper-2.js
-  |-- ...
-  |- constants
+  |
+  |- <b>constants</b>
   |-- constant-1.js
   |-- constant-2.js
   |- ...
@@ -70,18 +73,18 @@
 
 #### Структура сomponents:
 
-В этой папке находятся общие компоненты для текущего компонента (для простых структур)
+В этой папке находятся общие компоненты для текущего компонента
 
-- Может создаваться папка компонента
+- Может создаваться папка для каждого компонента (для простых структур)
 <pre>
  <code>
   <b>сomponents</b>
-  |- component-1
+  |- <b>component-1</b>
   |-- Component-1.jsx
   |-- Component-1.module.scss
   |-- index.js
   |
-  |- component-2
+  |- <b>component-2</b>
   |-- Component-2.jsx
   |-- Component-2.module.scss
   |-- index.js
@@ -89,28 +92,28 @@
  </code>
 </pre>
 
-- Может создаваться подпапка (по типу) в которой создаются компоненты (для более сложных структур)
+- Может создаваться подпапка (по типу компонентов) в которой создаются компоненты (для более сложных структур)
 <pre>
  <code>
   <b>сomponents</b>
-  |- core
-  |-- core-component-1
+  |- <b>core</b>
+  |-- <b>core-component-1</b>
   |--- CoreComponent-1.jsx
   |--- CoreComponent-1.module.scss
   |--- index.js
   |
-  |-- core-component-2
+  |-- <b>core-component-2</b>
   |--- CoreComponent-2.jsx
   |--- CoreComponent-2.module.scss
   |--- index.js
   |
-  |- block
-  |-- block-component-1
+  |- <b>block</b>
+  |-- <b>block-component-1</b>
   |--- BlockComponent-1.jsx
   |--- BlockComponent-1.module.scss
   |--- index.js
   |
-  |-- block-component-2
+  |-- <b>block-component-2</b>
   |--- BlockComponent-2.jsx
   |--- BlockComponent-2.module.scss
   |--- index.js
